@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/03cbd2289a.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="side-gradient"> </div>
+        <h2>Heavy tanks</h2>
+    <div class="main-container">
+          
+            <img class="flag" src="./assets/images/germany_flag_large.svg" />
+            <div class="main-container__column1 sidebar">
+                    <h3>Over 600 vehicles from 
+                        the largest tank-
+                        building superpowers</h3>
+                        <p>Each model has been recreated 
+                            with surgical precision</p>
+                        <div class="btn-primary">
+                            <input type="submit" value="Registration" />
+                        </div>
+               
+            </div>
+            <div class="main-container__column2 main">
+                <div class="tank-container">
+                    <img class="bg" src="./assets/images/bg-nation.png" />
+                    <div class="outline-text-large">Germany</div>
+                    <img class="tanks" src="./assets/images/tanks.svg" />
+                </div>
+                <div class="tank-description">
+                    <h1>128</h1>
+                    <p>German vehicles in the game</p>
+                    <h3>StuG III,   Panther,   Maus,   Tiger,   Pz. III</h3>
+                </div>
+            </div>
+       
+    </div>
+    <div class="slider-container">
+        <i onclick="handleSelectLeft()" id="left" class="fa-solid fa-arrow-left"></i>
+        <div class="slider">
+        
+            <div class="flag-wrapper selected">
+                <img src="./assets/images/img-slider/ussr_flag_small.svg" alt="USSR flag" />
+                <p>Ussr</p>
+            </div>
+            <div class="flag-wrapper">
+                <img src="./assets/images/img-slider/germany_flag_small.svg" alt="Gernam flag" />
+                <p>Germany</p>
+            </div>
+            <div class="flag-wrapper">
+                <img src="./assets/images/img-slider/uss_flag_small.svg" alt="USA flag" />
+                <p>Uss</p>
+            </div>
+            <div class="flag-wrapper">
+                <img src="./assets/images/img-slider/france_flag_small.svg" alt="French flag" />
+                <p>France</p>
+            </div>
+           <div class="flag-wrapper">
+                <img src="./assets/images/img-slider/uk_flag_small.svg" alt="French flag" />
+                <p>United Kingdom</p>
+           </div>
+           <div class="flag-wrapper">
+            <img src="./assets/images/img-slider/czech_flag_small.svg" alt="Czech flag" />
+            <p>Czech republic</p>
+           </div>
+
+
+        
+           
+        </div>
+        <i onclick="handleSelectRight()" id="right" class="fa-solid fa-arrow-right active"></i>
+    </div>
+</div>
+</body>
+</html>

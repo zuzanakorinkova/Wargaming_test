@@ -1,0 +1,66 @@
+
+@mixin flex($direction, $justify) {
+    display: flex;
+    justify-content: $justify;
+    align-items: center;
+    flex-direction: $direction;
+    flex-wrap: wrap;
+}
+
+.flag {
+    width: 593px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+}
+.main-container {
+    #{&}__column1 {
+        p {
+            margin-top: 1em;
+        }
+      
+    }
+}
+.side-gradient {
+    width: 100%;
+    position: absolute;
+    background: rgb(0,0,0);
+    background: linear-gradient(145deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%);
+    height: 200vh;
+    z-index: 1;
+    left: 0px;
+}
+
+
+@media (max-width: $desktop) {
+    .main-container{
+        // margin-top: rem;
+        #{&}__column1 {
+            @include flex(column, center);
+            padding-left: 1em!important;
+            padding-right: 1em;
+            margin-top: 2rem;
+            h3 {
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+        }
+    }
+    .flag {
+        width: 500px;
+        top: 100px;
+    }
+}   
+@media (max-width: $mobile) {
+    .main-container {
+        .flag {
+            width: 300px;
+            top: 250px;
+        }
+    }
+    .side-gradient {
+        height: 100vh;
+    }
+} 
